@@ -15,6 +15,11 @@
 		3F7420A02385C98D00510B20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F74209E2385C98D00510B20 /* LaunchScreen.storyboard */; };
 		3F7420AB2385C98D00510B20 /* GameWordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7420AA2385C98D00510B20 /* GameWordTests.swift */; };
 		3F7420B62385C98D00510B20 /* GameWordUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7420B52385C98D00510B20 /* GameWordUITests.swift */; };
+		3F7420C52385D23400510B20 /* LetterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7420C32385D23400510B20 /* LetterCell.swift */; };
+		3F7420CA2385D79700510B20 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7420C92385D79700510B20 /* UIColor.swift */; };
+		3F7420CC2385D7E900510B20 /* UIColorHexExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7420CB2385D7E900510B20 /* UIColorHexExtension.swift */; };
+		3FC7D3B42399912B00CCF49C /* LevelSelectData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC7D3B32399912B00CCF49C /* LevelSelectData.swift */; };
+		3FC7D3B7239C451700CCF49C /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC7D3B6239C451700CCF49C /* UIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		3F7420B12385C98D00510B20 /* GameWordUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GameWordUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F7420B52385C98D00510B20 /* GameWordUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameWordUITests.swift; sourceTree = "<group>"; };
 		3F7420B72385C98D00510B20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F7420C32385D23400510B20 /* LetterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterCell.swift; sourceTree = "<group>"; };
+		3F7420C92385D79700510B20 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		3F7420CB2385D7E900510B20 /* UIColorHexExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorHexExtension.swift; sourceTree = "<group>"; };
+		3FC7D3B32399912B00CCF49C /* LevelSelectData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelSelectData.swift; sourceTree = "<group>"; };
+		3FC7D3B6239C451700CCF49C /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +109,17 @@
 		3F7420922385C98C00510B20 /* GameWord */ = {
 			isa = PBXGroup;
 			children = (
+				3FC7D3B5239C44FB00CCF49C /* Extensions */,
+				3FC7D3B22399910C00CCF49C /* Model */,
+				3F7420C82385D77500510B20 /* New Group */,
 				3F7420932385C98C00510B20 /* AppDelegate.swift */,
+				3F74209C2385C98D00510B20 /* Assets.xcassets */,
+				3F7420A12385C98D00510B20 /* Info.plist */,
+				3F74209E2385C98D00510B20 /* LaunchScreen.storyboard */,
+				3F7420992385C98C00510B20 /* Main.storyboard */,
 				3F7420952385C98C00510B20 /* SceneDelegate.swift */,
 				3F7420972385C98C00510B20 /* ViewController.swift */,
-				3F7420992385C98C00510B20 /* Main.storyboard */,
-				3F74209C2385C98D00510B20 /* Assets.xcassets */,
-				3F74209E2385C98D00510B20 /* LaunchScreen.storyboard */,
-				3F7420A12385C98D00510B20 /* Info.plist */,
+				3F7420C72385D24200510B20 /* Views */,
 			);
 			path = GameWord;
 			sourceTree = "<group>";
@@ -126,6 +140,39 @@
 				3F7420B72385C98D00510B20 /* Info.plist */,
 			);
 			path = GameWordUITests;
+			sourceTree = "<group>";
+		};
+		3F7420C72385D24200510B20 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3F7420C32385D23400510B20 /* LetterCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3F7420C82385D77500510B20 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				3F7420C92385D79700510B20 /* UIColor.swift */,
+				3F7420CB2385D7E900510B20 /* UIColorHexExtension.swift */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		3FC7D3B22399910C00CCF49C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3FC7D3B32399912B00CCF49C /* LevelSelectData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3FC7D3B5239C44FB00CCF49C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3FC7D3B6239C451700CCF49C /* UIView.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +306,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FC7D3B7239C451700CCF49C /* UIView.swift in Sources */,
 				3F7420982385C98C00510B20 /* ViewController.swift in Sources */,
 				3F7420942385C98C00510B20 /* AppDelegate.swift in Sources */,
+				3FC7D3B42399912B00CCF49C /* LevelSelectData.swift in Sources */,
 				3F7420962385C98C00510B20 /* SceneDelegate.swift in Sources */,
+				3F7420CC2385D7E900510B20 /* UIColorHexExtension.swift in Sources */,
+				3F7420C52385D23400510B20 /* LetterCell.swift in Sources */,
+				3F7420CA2385D79700510B20 /* UIColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
